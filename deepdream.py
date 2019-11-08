@@ -1,24 +1,35 @@
 # imports and basic notebook setup
-from io import StringIO
+##MAKE SURE TO INSTALL PROTOBUF AND CAFFE ON MACHINE
+    # conda install -c anaconda protobuf
+    # conda install -c anaconda caffe
+
+from io import StringIO, BytesIO
 import numpy as np
 import scipy.ndimage as nd
 import PIL.Image
 from IPython.display import clear_output, Image, display
 from google.protobuf import text_format
-# from protobuf import text_format
 
 import caffe
 
 def showarray(a, fmt='jpeg'):
     a = np.uint8(np.clip(a, 0, 255))
-    f = StringIO()
+    f = BytesIO()
     PIL.Image.fromarray(a).save(f, fmt)
     display(Image(data=f.getvalue()))
 
-### LOAD DNN MODEL
-model_path = '../caffe/models/bvlc_googlenet/' # substitute your path here
-net_fn   = model_path + 'deploy.prototxt'
-param_fn = model_path + 'bvlc_googlenet.caffemodel'
+# ### LOAD DNN MODEL
+# model_path = '../caffe/models/bvlc_googlenet/' # substitute your path here
+# net_fn   = model_path + 'deploy.prototxt'
+# param_fn = model_path + 'bvlc_googlenet.caffemodel'
+
+# model_path = './placesCNN/' # JUST DOWNLOAD THE GOOGLENET ONE IF THIS DOESNT WORK
+# net_fn   = model_path + 'places205CNN_deploy.prototxt'
+# param_fn = model_path + 'places205CNN_iter_300000.caffemodel'
+
+model_path = './googlenet_places205/'
+net_fn   = model_path + 'deploy_places205.protxt'
+param_fn = model_path + 'googlelet_places205_train_iter_2400000.caffemodel'
 
 # Patching model to be able to compute gradients.
 # Note that you can also manually add "force_backward: true" line to "deploy.prototxt".
@@ -69,7 +80,7 @@ def deepdream(net, base_img, iter_n=10, octave_n=4, octave_scale=1.4,
               end='inception_4c/output', clip=True, **step_params):
     # prepare base images for all octaves
     octaves = [preprocess(net, base_img)]
-    for i in xrange(octave_n-1):
+    for i in range(octave_n-1):
         octaves.append(nd.zoom(octaves[-1], (1, 1.0/octave_scale,1.0/octave_scale), order=1))
 
     src = net.blobs['data']
@@ -83,7 +94,7 @@ def deepdream(net, base_img, iter_n=10, octave_n=4, octave_scale=1.4,
 
         src.reshape(1,3,h,w) # resize the network's input image size
         src.data[0] = octave_base+detail
-        for i in xrange(iter_n):
+        for i in range(iter_n):
             make_step(net, end=end, clip=clip, **step_params)
 
             # visualization
