@@ -105,7 +105,7 @@ def deepdream(net, base_img, iter_n=10, octave_n=4, octave_scale=1.4,
     return deprocess(net, src.data[0])
 
 ## IMPORT PICTURE
-img = np.float32(PIL.Image.open('slowrush.jpeg'))
+img = np.float32(PIL.Image.open('mcescher.jpg'))
 showarray(img)
 
 _=deepdream(net, img)
