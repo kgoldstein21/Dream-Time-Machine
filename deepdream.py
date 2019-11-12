@@ -2,6 +2,8 @@
 ##MAKE SURE TO INSTALL PROTOBUF AND CAFFE ON MACHINE
     # conda install -c anaconda protobuf
     # conda install -c anaconda caffe
+        #might need:
+        # sudo apt install caffe-cpu
 
 from io import StringIO, BytesIO
 import numpy as np
@@ -17,15 +19,7 @@ def showarray(a, fmt='jpeg'):
     f = BytesIO()
     PIL.Image.fromarray(a).save(f, fmt)
     display(Image(data=f.getvalue()))
-
-# ### LOAD DNN MODEL
-# model_path = '../caffe/models/bvlc_googlenet/' # substitute your path here
-# net_fn   = model_path + 'deploy.prototxt'
-# param_fn = model_path + 'bvlc_googlenet.caffemodel'
-
-# model_path = './placesCNN/' # JUST DOWNLOAD THE GOOGLENET ONE IF THIS DOESNT WORK
-# net_fn   = model_path + 'places205CNN_deploy.prototxt'
-# param_fn = model_path + 'places205CNN_iter_300000.caffemodel'
+    #### HOW TO WRITE IPYTHON.DISPLAY IMAGE TO EITHER WRITE TO FILE OR SHOW ON SCREEN
 
 model_path = './googlenet_places205/'
 net_fn   = model_path + 'deploy_places205.protxt'
@@ -111,7 +105,7 @@ def deepdream(net, base_img, iter_n=10, octave_n=4, octave_scale=1.4,
     return deprocess(net, src.data[0])
 
 ## IMPORT PICTURE
-img = np.float32(PIL.Image.open('TestImg_TheSlowRush.jpeg'))
+img = np.float32(PIL.Image.open('slowrush.jpeg'))
 showarray(img)
 
 _=deepdream(net, img)
