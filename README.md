@@ -6,12 +6,11 @@ Our project, named “Dream Time Machine” is a audio-enhanced visual experienc
 You will have to install Caffe and Google Protobuf to get Deep Dream up and running
 
   `conda install -c anaconda protobuf`
-
   `conda install -c anaconda caffe`
 
 (For these too work, you might have to install the Caffe and Protobuf files separately for Anaconda to install the Python wrapper for them)
 
->`sudo apt install caffe-cpu`
+`sudo apt install caffe-cpu`
 
 
 ### OpenCV
