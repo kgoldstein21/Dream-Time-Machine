@@ -1,10 +1,3 @@
-# imports and basic notebook setup
-##MAKE SURE TO INSTALL PROTOBUF AND CAFFE ON MACHINE
-    # conda install -c anaconda protobuf
-    # conda install -c anaconda caffe
-        #might need:
-        # sudo apt install caffe-cpu
-
 from io import StringIO, BytesIO
 import numpy as np
 import scipy.ndimage as nd
