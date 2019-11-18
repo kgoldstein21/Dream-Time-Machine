@@ -38,12 +38,13 @@ This project also makes use of image processing and computer vision library Open
 ## Deployment
 
 ## System Architecture
+Our system architecture is roughly laid out in the diagram below:
 
-
-![Image of System Architecture Diagram](https://github.com/kgoldstein21/Dream-Time-Machine/blob/master/systemarch1.jpg)
+![Image of System Architecture Diagram](https://github.com/kgoldstein21/Dream-Time-Machine/blob/master/systemarch1.jpg "system architecture diagram")
 
 Our program has two parts, one that pre-renders and one that is updated in real-time. The pre-rendered section creates the background video. It downloads Youtube videos and runs the Google Deep Dream algorithm on
 them to make a really trippy background. The real-time part has two parts in it. In the first part, the user chooses a song to play, and the program downloads the song and analyzes it as it plays. In the second part, the program takes in live video of the people using it, detects their face, and creates shapes that come out of their forehead. We're experimenting with ways that the program can be more interactive for the user. 
+
 ## Feedback
 If you have any questions about this project or would like to contribute in some way, feel free to [email us](mailto:ator@olin.edu "ator@olin.edu")!
 
