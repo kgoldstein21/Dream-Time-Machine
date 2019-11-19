@@ -9,6 +9,19 @@ kernel = np.ones((21, 21), 'uint8')
 start_time = time.time()
 more_shapes = False
 
+def background(frame, image_name):
+    rows,cols,channels = frame.shape
+    img1 = cv2.imread(image_name)
+    resized_image = cv2.resize(img1, (cols, rows))
+    return resized_image
+
+def add_images(frame, image_name):
+    frame = cv2.Canny(frame, 50, 100)
+    frame = cv2.cvtColor(frame, cv2.COLOR_GRAY2BGR)
+    blue, green, red = cv2.split(frame)
+    frame = cv2.add(frame, image_name)
+    return frame
+
 while True:
 
     #Capturing frames from the video feed
@@ -27,11 +40,9 @@ while True:
             start_time = time.time()
             more_shapes = True
 
-    #Making the background blue
-    frame = cv2.Canny(frame, 50, 100)
-    frame = cv2.cvtColor(frame, cv2.COLOR_GRAY2BGR)
-    blue, green, red = cv2.split(frame)
-    frame = cv2.add(frame, 50)
+    #Adding background image
+    resized_image = background(frame, 'sims.jpg')
+    frame = add_images(frame, resized_image)
 
     #Showing everything
     cv2.imshow('DREAM TIME MACHINE', frame)
