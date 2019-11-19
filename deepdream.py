@@ -98,7 +98,9 @@ def deepdream(net, base_img, iter_n=10, octave_n=4, octave_scale=1.4,
     return deprocess(net, src.data[0])
 
 ## IMPORT PICTURE
-img = np.float32(PIL.Image.open('mcescher.jpg'))
+img = np.float32(PIL.Image.open('snow.jpg'))
 showarray(img)
 
-_=deepdream(net, img)
+dream=deepdream(net, img)
+PIL.Image.fromarray(np.uint8(dream)).save("DREAMTEST.jpg") # COULD HAVE BACKGROUND VIDEO BE A GIF OF IT DREAMING FORMS... THEN U WOULD SAVE EVERY FEW ITERS (make if & put %i after .jpeg")
+                                                           # https://www.reddit.com/r/deepdream/comments/3es74c/saving_image_every_x_iterations/
