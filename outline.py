@@ -8,6 +8,7 @@ face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_alt.xml')
 kernel = np.ones((21, 21), 'uint8')
 start_time = time.time()
 more_shapes = False
+counter = 0
 
 def background(frame, image_name):
     rows,cols,channels = frame.shape
@@ -41,7 +42,18 @@ while True:
             more_shapes = True
 
     #Adding background image
-    resized_image = background(frame, 'sims.jpg')
+    if counter >= 0 and counter < 10:
+        resized_image = background(frame, 'frames/000'+str(counter)+'.jpg')
+        counter += 1
+    elif counter >= 10 and counter < 100:
+        resized_image = background(frame, 'frames/00'+str(counter)+'.jpg')
+        counter += 1
+    elif counter >= 100 and counter < 139:
+        resized_image = background(frame, 'frames/0'+str(counter)+'.jpg')
+        counter += 1
+    else:
+        resized_image = background(frame, 'frames/0'+str(counter)+'.jpg')
+        counter = 0
     frame = add_images(frame, resized_image)
 
     #Showing everything
