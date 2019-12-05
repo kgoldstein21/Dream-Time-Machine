@@ -39,10 +39,10 @@
     <meta property="og:image" content="https://avatars3.githubusercontent.com/u/42981095?s=400&amp;v=4" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="kgoldstein21/Dream-Time-Machine" /><meta property="og:url" content="https://github.com/kgoldstein21/Dream-Time-Machine" /><meta property="og:description" content="The title says it all. Contribute to kgoldstein21/Dream-Time-Machine development by creating an account on GitHub." />
 
   <link rel="assets" href="https://github.githubassets.com/">
-  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6NDY4ODY3MTYwOjRiMWIwYWM4MDZmOWYxYmUzYzA3MDgyYzQxZmVhZDU4OWFiNzkxZDBkYWMyMjNhNzE5OTkyODk1MTAyZmU1OGI=--446acc75fbb8442ba11b229907f860322e561e6e">
+  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6NDY4ODY3MTYwOjdhYTFmOGIwOWEzMTE1OWNjNDcyZTA0OGRmNTI3ZjlmMTU5ZDA4NGVmOTM0YTAwZDJkMjk5MmJjYTdmZWM4MGM=--809b719d110a3ec4b489c1fd8d52abfbeaef33cf">
   <link rel="sudo-modal" href="/sessions/sudo_modal">
 
-    <meta name="request-id" content="A9EB:73AA:2C7FA5E:5482BA3:5DE90A07" data-pjax-transient>
+    <meta name="request-id" content="BE35:68A8:212C059:4334906:5DE90DD0" data-pjax-transient>
 
 
   
@@ -53,7 +53,7 @@
     <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
     <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
 
-    <meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-request_id" content="A9EB:73AA:2C7FA5E:5482BA3:5DE90A07" /><meta name="octolytics-dimension-region_edge" content="iad" /><meta name="octolytics-dimension-region_render" content="iad" /><meta name="octolytics-dimension-ga_id" content="" class="js-octo-ga-id" /><meta name="octolytics-dimension-visitor_id" content="8262093739795588849" /><meta name="octolytics-actor-id" content="28844956" /><meta name="octolytics-actor-login" content="ator1" /><meta name="octolytics-actor-hash" content="94ac668c474209f8c9bbf61200da5b3b1e7dd1cc323adca8256c97bc96fa485c" />
+    <meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-request_id" content="BE35:68A8:212C059:4334906:5DE90DD0" /><meta name="octolytics-dimension-region_edge" content="iad" /><meta name="octolytics-dimension-region_render" content="iad" /><meta name="octolytics-dimension-ga_id" content="" class="js-octo-ga-id" /><meta name="octolytics-dimension-visitor_id" content="8262093739795588849" /><meta name="octolytics-actor-id" content="28844956" /><meta name="octolytics-actor-login" content="ator1" /><meta name="octolytics-actor-hash" content="94ac668c474209f8c9bbf61200da5b3b1e7dd1cc323adca8256c97bc96fa485c" />
 
 <meta name="analytics-location" content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" />
 
@@ -74,7 +74,7 @@
 
       <meta name="expected-hostname" content="github.com">
 
-      <meta name="js-proxy-site-detection-payload" content="ZGIzNjExOTEzNWRkZjlkMTVkNDVmMTljOWQ3NzVmYzdiYmY5OTFkY2IzYzNjNTQ5ZDhiYmMzZTZlMjYzY2RkZHx7InJlbW90ZV9hZGRyZXNzIjoiMjA4LjkxLjU1LjE4MSIsInJlcXVlc3RfaWQiOiJBOUVCOjczQUE6MkM3RkE1RTo1NDgyQkEzOjVERTkwQTA3IiwidGltZXN0YW1wIjoxNTc1NTUzNTQ0LCJob3N0IjoiZ2l0aHViLmNvbSJ9">
+      <meta name="js-proxy-site-detection-payload" content="ZDJhZGM1ODYwMDJiMmJhMGJhZWNiZjQ5ZDE3NGNmZjJkMjRiNzVkNjE2ZDQyNDA5ODJmODdlYTNmMGRkMTk3Mnx7InJlbW90ZV9hZGRyZXNzIjoiMjA4LjkxLjU1LjE4MSIsInJlcXVlc3RfaWQiOiJCRTM1OjY4QTg6MjEyQzA1OTo0MzM0OTA2OjVERTkwREQwIiwidGltZXN0YW1wIjoxNTc1NTU0NTU3LCJob3N0IjoiZ2l0aHViLmNvbSJ9">
 
     <meta name="enabled-features" content="LAUNCH_PROJECT,MARKETPLACE_FEATURED_BLOG_POSTS,MARKETPLACE_INVOICED_BILLING,MARKETPLACE_SOCIAL_PROOF_CUSTOMERS,MARKETPLACE_TRENDING_SOCIAL_PROOF,MARKETPLACE_RECOMMENDATIONS,MARKETPLACE_PENDING_INSTALLATIONS,NOTIFY_ON_BLOCK,RELATED_ISSUES,GHE_CLOUD_TRIAL">
 
@@ -164,7 +164,7 @@
           aria-autocomplete="list"
           aria-controls="jump-to-results"
           aria-label="Search or jump to…"
-          data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations#csrf-token=vpAWR2ynO9W2T00T7rbNFOOXsAl7sxEgsihN+vnViLOYDkExi5opvDZvBWPe6m35dHyulpcO87gFWbb55OhXqQ=="
+          data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations#csrf-token=7PoRtFU7eeM0vcPizqyECdDJX4oJRWR9LzrBUavq90fKZEbCsgZrirSdi5L+8CTkRyJBFeX4huWYSzpSttcoXQ=="
           spellcheck="false"
           autocomplete="off"
           >
@@ -317,7 +317,7 @@
       <img class="avatar" height="20" width="20" alt="@ator1" src="https://avatars0.githubusercontent.com/u/28844956?s=60&amp;v=4" />
       ator1
 </a>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="JwFx0y9OPrryjhOSZkxTwB+nvZhD12lcLvoNZcx6WAauejVqhJ2PFA0TOATjm6/JMtXVi7ZKKIRH76TBV3+7/Q==" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="BA+CUZjogVqvSvHr/rcm7P344HJ3muUV4P5i+RJMd6qNdMboMzsw9FDX2n17YNrl0IqIYYIHpM2J68tdiUmUUQ==" />
       <button type="submit" class="Header-link mr-0 mr-lg-3 py-2 py-lg-0 border-top border-lg-top-0 border-white-fade-15 d-lg-none btn-link d-block width-full text-left" data-ga-click="Header, sign out, icon:logout" style="padding-left: 2px;">
         <svg class="octicon octicon-sign-out v-align-middle" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 9V7H8V5h4V3l4 3-4 3zm-2 3H6V3L2 1h8v3h1V1c0-.55-.45-1-1-1H1C.45 0 0 .45 0 1v11.38c0 .39.22.73.55.91L6 16.01V13h4c.55 0 1-.45 1-1V8h-1v4z"/></svg>
         Sign out
@@ -410,7 +410,7 @@
   " data-team-hovercards-enabled>
   <details class="js-user-status-details details-reset details-overlay details-overlay-dark">
     <summary class="btn-link btn-block link-gray no-underline js-toggle-user-status-edit toggle-user-status-edit "
-      role="menuitem" data-hydro-click="{&quot;event_type&quot;:&quot;user_profile.click&quot;,&quot;payload&quot;:{&quot;profile_user_id&quot;:42981095,&quot;target&quot;:&quot;EDIT_USER_STATUS&quot;,&quot;user_id&quot;:28844956,&quot;client_id&quot;:&quot;1923668603.1568581361&quot;,&quot;originating_request_id&quot;:&quot;A9EB:73AA:2C7FA5E:5482BA3:5DE90A07&quot;,&quot;originating_url&quot;:&quot;https://github.com/kgoldstein21/Dream-Time-Machine/blob/master/systemarch1.jpg&quot;,&quot;referrer&quot;:&quot;https://kgoldstein21.github.io/Dream-Time-Machine/&quot;}}" data-hydro-click-hmac="c2c2b76d75d30ee2810705073ef0255fce506084cbcc1fcffb785ddbd3ec8098">
+      role="menuitem" data-hydro-click="{&quot;event_type&quot;:&quot;user_profile.click&quot;,&quot;payload&quot;:{&quot;profile_user_id&quot;:42981095,&quot;target&quot;:&quot;EDIT_USER_STATUS&quot;,&quot;user_id&quot;:28844956,&quot;client_id&quot;:&quot;1923668603.1568581361&quot;,&quot;originating_request_id&quot;:&quot;BE35:68A8:212C059:4334906:5DE90DD0&quot;,&quot;originating_url&quot;:&quot;https://github.com/kgoldstein21/Dream-Time-Machine/blob/master/systemarch1.jpg&quot;,&quot;referrer&quot;:&quot;https://kgoldstein21.github.io/Dream-Time-Machine/&quot;}}" data-hydro-click-hmac="c0047a7885fea4090129739caa7690048785275e449647c21e194807fa857dd5">
       <div class="d-flex">
         <div class="f6 lh-condensed user-status-header
           d-inline-block v-align-middle
@@ -437,7 +437,7 @@
       </div>
     </summary>
     <details-dialog class="details-dialog rounded-1 anim-fade-in fast Box Box--overlay" role="dialog" tabindex="-1">
-      <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="position-relative flex-auto js-user-status-form" action="/users/status?compact=1&amp;link_mentions=0&amp;truncate=1" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="put" /><input type="hidden" name="authenticity_token" value="lQWy6ECULe9bmetiQ4vpfKKMa6zVAEPN8YWS6qYIzUvG6KSLWthr10T9m08tTacRRA3mfO+3VkQO6THY3wPDKw==" />
+      <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="position-relative flex-auto js-user-status-form" action="/users/status?compact=1&amp;link_mentions=0&amp;truncate=1" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="put" /><input type="hidden" name="authenticity_token" value="QVGCrEmjF2tmGaO4hrNn5j7Kj0HtTNUQQQsYp8f0yPASvJTPU+9RU3l905XodSmL2EsCkdf7wJm+Z7uVvv/GkA==" />
         <div class="Box-header bg-gray border-bottom p-3">
           <button class="Box-btn-octicon js-toggle-user-status-edit btn-octicon float-right" type="reset" aria-label="Close dialog" data-close-dialog>
             <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
@@ -557,17 +557,17 @@
       </li>
       <li class="dropdown-divider" role="none"></li>
         <li>
-          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 30 minutes" value="2019-12-05T09:15:44-05:00">
+          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 30 minutes" value="2019-12-05T09:32:37-05:00">
             in 30 minutes
           </button>
         </li>
         <li>
-          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 1 hour" value="2019-12-05T09:45:44-05:00">
+          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 1 hour" value="2019-12-05T10:02:37-05:00">
             in 1 hour
           </button>
         </li>
         <li>
-          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 4 hours" value="2019-12-05T12:45:44-05:00">
+          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 4 hours" value="2019-12-05T13:02:37-05:00">
             in 4 hours
           </button>
         </li>
@@ -625,10 +625,10 @@
     class="dropdown-item btn-link"
     role="menuitem"
     data-feature-preview-trigger-url="/users/ator1/feature_previews"
-    data-feature-preview-close-details="{&quot;event_type&quot;:&quot;feature_preview.clicks.close_modal&quot;,&quot;payload&quot;:{&quot;client_id&quot;:&quot;1923668603.1568581361&quot;,&quot;originating_request_id&quot;:&quot;A9EB:73AA:2C7FA5E:5482BA3:5DE90A07&quot;,&quot;originating_url&quot;:&quot;https://github.com/kgoldstein21/Dream-Time-Machine/blob/master/systemarch1.jpg&quot;,&quot;referrer&quot;:&quot;https://kgoldstein21.github.io/Dream-Time-Machine/&quot;,&quot;user_id&quot;:28844956}}"
-    data-feature-preview-close-hmac="003c8da791e57da19e29a591abe3264d3d552cebc68683ed0f7ba821d39d6b32"
-    data-hydro-click="{&quot;event_type&quot;:&quot;feature_preview.clicks.open_modal&quot;,&quot;payload&quot;:{&quot;link_location&quot;:&quot;user_dropdown&quot;,&quot;client_id&quot;:&quot;1923668603.1568581361&quot;,&quot;originating_request_id&quot;:&quot;A9EB:73AA:2C7FA5E:5482BA3:5DE90A07&quot;,&quot;originating_url&quot;:&quot;https://github.com/kgoldstein21/Dream-Time-Machine/blob/master/systemarch1.jpg&quot;,&quot;referrer&quot;:&quot;https://kgoldstein21.github.io/Dream-Time-Machine/&quot;,&quot;user_id&quot;:28844956}}"
-    data-hydro-click-hmac="14baa5cbce9357acc46b62f8aca3d67096ac560d2e9c134b90bde490e27df4f6"
+    data-feature-preview-close-details="{&quot;event_type&quot;:&quot;feature_preview.clicks.close_modal&quot;,&quot;payload&quot;:{&quot;client_id&quot;:&quot;1923668603.1568581361&quot;,&quot;originating_request_id&quot;:&quot;BE35:68A8:212C059:4334906:5DE90DD0&quot;,&quot;originating_url&quot;:&quot;https://github.com/kgoldstein21/Dream-Time-Machine/blob/master/systemarch1.jpg&quot;,&quot;referrer&quot;:&quot;https://kgoldstein21.github.io/Dream-Time-Machine/&quot;,&quot;user_id&quot;:28844956}}"
+    data-feature-preview-close-hmac="c0ed073fb6614b0db907f219b732c21e9c37afa34b9b04a0ce2f772ea2059bfa"
+    data-hydro-click="{&quot;event_type&quot;:&quot;feature_preview.clicks.open_modal&quot;,&quot;payload&quot;:{&quot;link_location&quot;:&quot;user_dropdown&quot;,&quot;client_id&quot;:&quot;1923668603.1568581361&quot;,&quot;originating_request_id&quot;:&quot;BE35:68A8:212C059:4334906:5DE90DD0&quot;,&quot;originating_url&quot;:&quot;https://github.com/kgoldstein21/Dream-Time-Machine/blob/master/systemarch1.jpg&quot;,&quot;referrer&quot;:&quot;https://kgoldstein21.github.io/Dream-Time-Machine/&quot;,&quot;user_id&quot;:28844956}}"
+    data-hydro-click-hmac="6af626817ba2f96039bf9383bc799fb9a7a24b458e3d2bd64a0bd4e98eaeb856"
   >
     Feature preview
   </button>
@@ -637,7 +637,7 @@
 
     <a role="menuitem" class="dropdown-item" href="https://help.github.com" data-ga-click="Header, go to help, text:help">Help</a>
     <a role="menuitem" class="dropdown-item" href="/settings/profile" data-ga-click="Header, go to settings, icon:settings">Settings</a>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="logout-form" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="rv9RphOiEX0/6/6EhWziP1Qrm9iEXCuyBYL1jJtUg8wnhBUfuHGg08B21RIAux42eVnzy3HBampsl1woAFFgNw==" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="logout-form" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="F2XVnw3GvnsK9ZJiSNcV2ng1sViuSs60zI+udQH0tJOeHpEmphUP1fVoufTNAOnTVUfZS1vXj2ylmgfRmvFXaA==" />
       
       <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout" role="menuitem">
         Sign out
@@ -677,10 +677,10 @@
       <p class="shelf-lead">
           Using the Hello World guide, you’ll start a branch, write comments, and open a pull request.
       </p>
-      <a class="btn btn-primary shelf-cta" target="_blank" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;READ_GUIDE&quot;,&quot;repository_id&quot;:219044976,&quot;client_id&quot;:&quot;1923668603.1568581361&quot;,&quot;originating_request_id&quot;:&quot;A9EB:73AA:2C7FA5E:5482BA3:5DE90A07&quot;,&quot;originating_url&quot;:&quot;https://github.com/kgoldstein21/Dream-Time-Machine/blob/master/systemarch1.jpg&quot;,&quot;referrer&quot;:&quot;https://kgoldstein21.github.io/Dream-Time-Machine/&quot;,&quot;user_id&quot;:28844956}}" data-hydro-click-hmac="6d2725e745b9bc97d4fb2e26bb73106afa6f7a127087bc250d96a0e81b04a48d" href="https://guides.github.com/activities/hello-world/">Read the guide</a>
+      <a class="btn btn-primary shelf-cta" target="_blank" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;READ_GUIDE&quot;,&quot;repository_id&quot;:219044976,&quot;client_id&quot;:&quot;1923668603.1568581361&quot;,&quot;originating_request_id&quot;:&quot;BE35:68A8:212C059:4334906:5DE90DD0&quot;,&quot;originating_url&quot;:&quot;https://github.com/kgoldstein21/Dream-Time-Machine/blob/master/systemarch1.jpg&quot;,&quot;referrer&quot;:&quot;https://kgoldstein21.github.io/Dream-Time-Machine/&quot;,&quot;user_id&quot;:28844956}}" data-hydro-click-hmac="e60d4461bd2af0825fbe37e4b064209da92171c4e061eb19c9bbbb9c4687372b" href="https://guides.github.com/activities/hello-world/">Read the guide</a>
     </div>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="shelf-dismiss js-notice-dismiss" action="/dashboard/dismiss_bootcamp" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="delete" /><input type="hidden" name="authenticity_token" value="ReOvpcYm3R+sSMVhJNg3LQ/t8xeQAnnkgsoswim8sWFl1bZ8dUmYcjOArrxBgaypPZcywAiRoXO7fCp+eS5bow==" />
-      <button name="button" type="submit" class="mr-1 close-button tooltipped tooltipped-w" aria-label="Hide this notice forever" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;DISMISS_BANNER&quot;,&quot;repository_id&quot;:219044976,&quot;client_id&quot;:&quot;1923668603.1568581361&quot;,&quot;originating_request_id&quot;:&quot;A9EB:73AA:2C7FA5E:5482BA3:5DE90A07&quot;,&quot;originating_url&quot;:&quot;https://github.com/kgoldstein21/Dream-Time-Machine/blob/master/systemarch1.jpg&quot;,&quot;referrer&quot;:&quot;https://kgoldstein21.github.io/Dream-Time-Machine/&quot;,&quot;user_id&quot;:28844956}}" data-hydro-click-hmac="1aa3cc26b2b941322c3f5b240678f417e8e9212114d8209cc9513443377b6b84">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="shelf-dismiss js-notice-dismiss" action="/dashboard/dismiss_bootcamp" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="delete" /><input type="hidden" name="authenticity_token" value="unx/FjPfTulbFV16oh2zm5+f3iVCs6c2RioSMOrz37iaSmbPgLALhMTdNqfHRCgfreUf8togf6F/nBSMumE1eg==" />
+      <button name="button" type="submit" class="mr-1 close-button tooltipped tooltipped-w" aria-label="Hide this notice forever" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;DISMISS_BANNER&quot;,&quot;repository_id&quot;:219044976,&quot;client_id&quot;:&quot;1923668603.1568581361&quot;,&quot;originating_request_id&quot;:&quot;BE35:68A8:212C059:4334906:5DE90DD0&quot;,&quot;originating_url&quot;:&quot;https://github.com/kgoldstein21/Dream-Time-Machine/blob/master/systemarch1.jpg&quot;,&quot;referrer&quot;:&quot;https://kgoldstein21.github.io/Dream-Time-Machine/&quot;,&quot;user_id&quot;:28844956}}" data-hydro-click-hmac="76dba6926dad2052b8e412333f1301f66bad9257e6d2ea2c49084d90b4886720">
         <svg aria-label="Hide this notice forever" class="octicon octicon-x v-align-text-top" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
 </button></form>  </div>
 </div>
@@ -704,10 +704,10 @@
 
   <li>
     
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-remote="true" class="clearfix js-social-form js-social-container" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="5tveEjKKPnCidNP6ydKqCGBIz36bEPIsjoi90G3572d++1SNLuwqNV6jaI8fYGdTsd/GMlxdQt+dzQK7Ep//GA==" />      <input type="hidden" name="repository_id" value="219044976">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-remote="true" class="clearfix js-social-form js-social-container" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="DrSs+Gm2NZOeOkWHX11C32O9W728rYuDSWRaGzeTlgeWlCZnddAh1mLt/vKJ74+EsipS8XvgO3BaIeVwSPWGeA==" />      <input type="hidden" name="repository_id" value="219044976">
 
       <details class="details-reset details-overlay select-menu float-left">
-        <summary class="select-menu-button float-left btn btn-sm btn-with-count" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;WATCH_BUTTON&quot;,&quot;repository_id&quot;:219044976,&quot;client_id&quot;:&quot;1923668603.1568581361&quot;,&quot;originating_request_id&quot;:&quot;A9EB:73AA:2C7FA5E:5482BA3:5DE90A07&quot;,&quot;originating_url&quot;:&quot;https://github.com/kgoldstein21/Dream-Time-Machine/blob/master/systemarch1.jpg&quot;,&quot;referrer&quot;:&quot;https://kgoldstein21.github.io/Dream-Time-Machine/&quot;,&quot;user_id&quot;:28844956}}" data-hydro-click-hmac="63b6fb4c576002b6217d4bdcce0a724249d61324cc39ec07b3b2351044c79708" data-ga-click="Repository, click Watch settings, action:blob#show">          <span data-menu-button>
+        <summary class="select-menu-button float-left btn btn-sm btn-with-count" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;WATCH_BUTTON&quot;,&quot;repository_id&quot;:219044976,&quot;client_id&quot;:&quot;1923668603.1568581361&quot;,&quot;originating_request_id&quot;:&quot;BE35:68A8:212C059:4334906:5DE90DD0&quot;,&quot;originating_url&quot;:&quot;https://github.com/kgoldstein21/Dream-Time-Machine/blob/master/systemarch1.jpg&quot;,&quot;referrer&quot;:&quot;https://kgoldstein21.github.io/Dream-Time-Machine/&quot;,&quot;user_id&quot;:28844956}}" data-hydro-click-hmac="ad4f9a973b041cc558e06f7e0a5617e85e974a3e44e10c118647d7d2984689e3" data-ga-click="Repository, click Watch settings, action:blob#show">          <span data-menu-button>
               <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
               Watch
           </span>
@@ -778,18 +778,18 @@
 
   <li>
       <div class="js-toggler-container js-social-container starring-container ">
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" action="/kgoldstein21/Dream-Time-Machine/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="9OqGNvq9mVWvUaPxks/5YMYAUEC4T3QvdOOwidsreoXnz1/hHd4RmTSzELLN6v9zp04D60B98bDOOIEj9DlgXg==" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" action="/kgoldstein21/Dream-Time-Machine/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="BDnkZtNXfdGdBv9ZDsGlKaQUBZO+5a+0cvqKJE8beqwXHD2xNDT1HQbkTBpR5KM6xVpWOEbXKivIIbuOYAlgdw==" />
       <input type="hidden" name="context" value="repository"></input>
-      <button type="submit" class="btn btn-sm btn-with-count js-toggler-target" aria-label="Unstar this repository" title="Unstar kgoldstein21/Dream-Time-Machine" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;UNSTAR_BUTTON&quot;,&quot;repository_id&quot;:219044976,&quot;client_id&quot;:&quot;1923668603.1568581361&quot;,&quot;originating_request_id&quot;:&quot;A9EB:73AA:2C7FA5E:5482BA3:5DE90A07&quot;,&quot;originating_url&quot;:&quot;https://github.com/kgoldstein21/Dream-Time-Machine/blob/master/systemarch1.jpg&quot;,&quot;referrer&quot;:&quot;https://kgoldstein21.github.io/Dream-Time-Machine/&quot;,&quot;user_id&quot;:28844956}}" data-hydro-click-hmac="3c818f9b80beec904ed09663afde87c5c4fb36cca225e1f64668cc216481be79" data-ga-click="Repository, click unstar button, action:blob#show; text:Unstar">        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+      <button type="submit" class="btn btn-sm btn-with-count js-toggler-target" aria-label="Unstar this repository" title="Unstar kgoldstein21/Dream-Time-Machine" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;UNSTAR_BUTTON&quot;,&quot;repository_id&quot;:219044976,&quot;client_id&quot;:&quot;1923668603.1568581361&quot;,&quot;originating_request_id&quot;:&quot;BE35:68A8:212C059:4334906:5DE90DD0&quot;,&quot;originating_url&quot;:&quot;https://github.com/kgoldstein21/Dream-Time-Machine/blob/master/systemarch1.jpg&quot;,&quot;referrer&quot;:&quot;https://kgoldstein21.github.io/Dream-Time-Machine/&quot;,&quot;user_id&quot;:28844956}}" data-hydro-click-hmac="03b2ca1b97089426b890af3e86de845c1b27126879ad70b1db14e954e44dfe5e" data-ga-click="Repository, click unstar button, action:blob#show; text:Unstar">        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
         Unstar
 </button>        <a class="social-count js-social-count" href="/kgoldstein21/Dream-Time-Machine/stargazers"
            aria-label="0 users starred this repository">
            0
         </a>
 </form>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" action="/kgoldstein21/Dream-Time-Machine/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="xrTQlj9cUBcZDmFYlDOSL0ZuhmfaSs8wakD3X5NgIGEje9cUhtAEgRmFCgeMU/VTpfCK4/nsPo6MEISOwjjLFQ==" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" action="/kgoldstein21/Dream-Time-Machine/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="zJHKlUQTty+vRXvpC6HKPOBLoJACBLbhTwj/e2Qz09IpXs0X/Z/jua/OELYTwa1AA9WsFCGiR1+pWIyqNWs4pg==" />
       <input type="hidden" name="context" value="repository"></input>
-      <button type="submit" class="btn btn-sm btn-with-count js-toggler-target" aria-label="Unstar this repository" title="Star kgoldstein21/Dream-Time-Machine" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;STAR_BUTTON&quot;,&quot;repository_id&quot;:219044976,&quot;client_id&quot;:&quot;1923668603.1568581361&quot;,&quot;originating_request_id&quot;:&quot;A9EB:73AA:2C7FA5E:5482BA3:5DE90A07&quot;,&quot;originating_url&quot;:&quot;https://github.com/kgoldstein21/Dream-Time-Machine/blob/master/systemarch1.jpg&quot;,&quot;referrer&quot;:&quot;https://kgoldstein21.github.io/Dream-Time-Machine/&quot;,&quot;user_id&quot;:28844956}}" data-hydro-click-hmac="662d1fb68658d9df12ab64c71d23e49f5b7521e555ce629394969e12dce15f02" data-ga-click="Repository, click star button, action:blob#show; text:Star">        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+      <button type="submit" class="btn btn-sm btn-with-count js-toggler-target" aria-label="Unstar this repository" title="Star kgoldstein21/Dream-Time-Machine" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;STAR_BUTTON&quot;,&quot;repository_id&quot;:219044976,&quot;client_id&quot;:&quot;1923668603.1568581361&quot;,&quot;originating_request_id&quot;:&quot;BE35:68A8:212C059:4334906:5DE90DD0&quot;,&quot;originating_url&quot;:&quot;https://github.com/kgoldstein21/Dream-Time-Machine/blob/master/systemarch1.jpg&quot;,&quot;referrer&quot;:&quot;https://kgoldstein21.github.io/Dream-Time-Machine/&quot;,&quot;user_id&quot;:28844956}}" data-hydro-click-hmac="74fd71922bb57fcc8107065e2ae18754e4480dbef186da3da1dd13232d16f463" data-ga-click="Repository, click star button, action:blob#show; text:Star">        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
         Star
 </button>        <a class="social-count js-social-count" href="/kgoldstein21/Dream-Time-Machine/stargazers"
            aria-label="0 users starred this repository">
@@ -801,7 +801,7 @@
 
   <li>
           <details class="details-reset details-overlay details-overlay-dark d-inline-block float-left">
-            <summary class="btn btn-sm btn-with-count" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;FORK_BUTTON&quot;,&quot;repository_id&quot;:219044976,&quot;client_id&quot;:&quot;1923668603.1568581361&quot;,&quot;originating_request_id&quot;:&quot;A9EB:73AA:2C7FA5E:5482BA3:5DE90A07&quot;,&quot;originating_url&quot;:&quot;https://github.com/kgoldstein21/Dream-Time-Machine/blob/master/systemarch1.jpg&quot;,&quot;referrer&quot;:&quot;https://kgoldstein21.github.io/Dream-Time-Machine/&quot;,&quot;user_id&quot;:28844956}}" data-hydro-click-hmac="9f13995986f2139ea7aefe0d32f3f56c3a5610fcc7c3a8d300c920ddf3c6e253" data-ga-click="Repository, show fork modal, action:blob#show; text:Fork" title="Fork your own copy of kgoldstein21/Dream-Time-Machine to your account">              <svg class="octicon octicon-repo-forked v-align-text-bottom" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+            <summary class="btn btn-sm btn-with-count" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;FORK_BUTTON&quot;,&quot;repository_id&quot;:219044976,&quot;client_id&quot;:&quot;1923668603.1568581361&quot;,&quot;originating_request_id&quot;:&quot;BE35:68A8:212C059:4334906:5DE90DD0&quot;,&quot;originating_url&quot;:&quot;https://github.com/kgoldstein21/Dream-Time-Machine/blob/master/systemarch1.jpg&quot;,&quot;referrer&quot;:&quot;https://kgoldstein21.github.io/Dream-Time-Machine/&quot;,&quot;user_id&quot;:28844956}}" data-hydro-click-hmac="42362671a75fdfc7cd20b87a3287f687f4323d1ed50325555d31d8f324dbecef" data-ga-click="Repository, show fork modal, action:blob#show; text:Fork" title="Fork your own copy of kgoldstein21/Dream-Time-Machine to your account">              <svg class="octicon octicon-repo-forked v-align-text-bottom" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
               Fork
 </summary>            <details-dialog
               class="anim-fade-in fast Box Box--overlay d-flex flex-column"
@@ -962,7 +962,7 @@
   
 
 
-    <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/kgoldstein21/Dream-Time-Machine/blob/7d267d90b5a51693444cf7990490863f8d8bf5a2/systemarch1.jpg">Permalink</a>
+    <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/kgoldstein21/Dream-Time-Machine/blob/608efa011b5c8f768535594aed10c90930da207c/systemarch1.jpg">Permalink</a>
 
     <!-- blob contrib key: blob_contributors:v21:c5cf6c6a595872c458533772ef0e5d93 -->
       
@@ -1056,7 +1056,7 @@
                 <svg class="octicon octicon-device-desktop" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M15 2H1c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5.34c-.25.61-.86 1.39-2.34 2h8c-1.48-.61-2.09-1.39-2.34-2H15c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 9H1V3h14v8z"/></svg>
             </a>
 
-          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/kgoldstein21/Dream-Time-Machine/delete/master/systemarch1.jpg" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="rSVirb1YwPS7lOYWEJmo2ZGAfCDzghxc9m8h0vEGAMHh6AQN9SSYXRCDqin/9n8FShplcfOnHEH7M/w03zutxg==" />
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/kgoldstein21/Dream-Time-Machine/delete/master/systemarch1.jpg" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="uOV0AhhAs7dvhNSal9XfGeUXSKxlpFNYhJIZLMpaqs30KBKiUDzrHsSTmKV4ugjFPo1R/WWBU0WJzsTK5GcHyg==" />
             <button class="btn-octicon btn-octicon-danger tooltipped tooltipped-nw" type="submit"
               aria-label="Delete this file" data-disable-with>
               <svg class="octicon octicon-trashcan" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"/></svg>
