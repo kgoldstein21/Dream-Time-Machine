@@ -34,66 +34,10 @@
     </section>
 
     <section class="main-content">
-      <h1 id="dream-time-machine">Dream Time Machine</h1>
+      <h1 id="dream-time-machine">About</h1>
+<h3 id="Meet">Meet the team!.</h3>
 
-<h3 id="dream-time-machine-is-an-audio-enhanced-visual-experience-that-combines-video-altered-with-googles-deep-dream-with-a-live-videocam-feed">Dream Time Machine is an audio-enhanced visual experience that combines video altered with Google’s Deep Dream with an interactive live videocam feed.</h3>
-
-<h2 id="table-of-contents">Table of Contents</h2>
-<ul>
-  <li><a href="https://kgoldstein21.github.io/Dream-Time-Machine/#Introduction" title="Introduction">Introduction</a></li>
-  <li><a href="https://kgoldstein21.github.io/Dream-Time-Machine/#Getting-Started" title="Getting Started">Getting Started</a></li>
-  <li><a href="https://kgoldstein21.github.io/Dream-Time-Machine/#Deployment" title="Deployment">Deployment</a></li>
-  <li><a href="https://kgoldstein21.github.io/Dream-Time-Machine/#System-Architecture" title="System Architecture">System Architecture</a></li>
-  <li><a href="https://kgoldstein21.github.io/Dream-Time-Machine/#Feedback" title="Feedback">Feedback</a></li>
-  <li><a href="https://kgoldstein21.github.io/Dream-Time-Machine/#Team" title="Team">Team</a></li>
-</ul>
-
-<h2 id="introduction">Introduction</h2>
-<p>This project takes two inputs: a music file and a webcam video feed and outputs an interactive music video. In particular, it detects outlines from the video feed, detects faces, and then creates pulsing shapes that emanate from the center of each face that it detects. the shapes will pulse to the beats per minute of the inputted song. Additionally, the outlines will be superimposed on a video altered with Google’s Deep Dream algorithm. If you’re not familiar with Deep Dream, here are some examples of images created using it:</p>
-
-<p><img src="./index_files/DREAMTEAM.jpeg" alt="deep dream dog" width="500"></p>
-
-<p>In brief, Google Deep Dream is a computer vision program that deliberately over-processes images. It works by taking in a neural network that’s already been trained on a certain set of images, then telling that neural network to recognize patterns in whatever the input image is. It repeats this several times to create truly unsettling images.</p>
-
-<h2 id="getting-started">Getting Started</h2>
-<h3 id="deep-dream">Deep Dream</h3>
-<p>You will have to install Caffe and Google Protobuf to get Google Deep Dream up and running:</p>
-
-<p><code class="language-plaintext highlighter-rouge">conda install -c anaconda protobuf</code></p>
-
-<p><code class="language-plaintext highlighter-rouge">conda install -c anaconda caffe</code></p>
-
-<p>(For these to work, you might have to install the Caffe and Protobuf files separately for Anaconda to install the Python wrapper for them)</p>
-
-<p><code class="language-plaintext highlighter-rouge">sudo apt install caffe-cpu</code></p>
-
-<h3 id="opencv">OpenCV</h3>
-<p>This project also makes use of image processing and computer vision library OpenCV. To get this library installed, run the following pip install:</p>
-
-<p><code class="language-plaintext highlighter-rouge">$ pip install opencv-python</code></p>
-
-<h2 id="deployment">Deployment</h2>
-
-<h2 id="system-architecture">System Architecture</h2>
-<p>Our system architecture is roughly laid out in the diagram below:</p>
-
-<p><img src="./index_files/systemarch1.jpg" alt="Image of System Architecture Diagram" title="system architecture diagram"></p>
-
-<p>Our program has two parts, one that pre-renders and one that is updated in real-time. The pre-rendered section creates the background video. It downloads Youtube videos and runs the Google Deep Dream algorithm on
-them to make a really trippy background. The real-time part has two parts in it. In the first part, the user chooses a song to play, and the program downloads the song and analyzes it as it plays. In the second part, the program takes in live video of the people using it, detects their face, and creates shapes that come out of their forehead. We’re experimenting with ways that the program can be more interactive for the user.</p>
-
-<h2 id="feedback">Feedback</h2>
-<p>If you have any questions about this project or would like to contribute in some way, feel free to <a href="mailto:ator@olin.edu" title="ator@olin.edu">email us</a>!</p>
-
-<h2 id="team">Team</h2>
-<p>Afraz Padamsee <a href="https://github.com/apadamsee" title="Afraz&#39;s GitHub">@apadamsee</a></p>
-
-<p>Annie Tor <a href="https://github.com/ator1" title="Annie&#39;s GitHub">@ator1</a></p>
-
-<p>Christian Quijano <a href="https://github.com/cuijor" title="Christian&#39;s GitHub">@cuijor</a></p>
-
-<p>Katie Goldstein <a href="https://github.com/kgoldstein21" title="Katie&#39;s GitHub">@kgoldstein21</a></p>
-
+<p><img src="./index_files/DREAMTEAM.jpeg" alt="TEAM" width="800"></p>
 
       <footer class="site-footer">
 
