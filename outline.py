@@ -8,6 +8,20 @@ face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_alt.xml')
 kernel = np.ones((21, 21), 'uint8')
 start_time = time.time()
 more_shapes = False
+counter = 0
+
+def background(frame, image_name):
+    rows,cols,channels = frame.shape
+    img1 = cv2.imread(image_name)
+    resized_image = cv2.resize(img1, (cols, rows))
+    return resized_image
+
+def add_images(frame, image_name):
+    frame = cv2.Canny(frame, 50, 100)
+    frame = cv2.cvtColor(frame, cv2.COLOR_GRAY2BGR)
+    blue, green, red = cv2.split(frame)
+    frame = cv2.add(frame, image_name)
+    return frame
 
 while True:
 
@@ -27,11 +41,20 @@ while True:
             start_time = time.time()
             more_shapes = True
 
-    #Making the background blue
-    frame = cv2.Canny(frame, 50, 100)
-    frame = cv2.cvtColor(frame, cv2.COLOR_GRAY2BGR)
-    blue, green, red = cv2.split(frame)
-    frame = cv2.add(frame, 50)
+    #Adding background image
+    if counter >= 0 and counter < 10:
+        resized_image = background(frame, 'frames/000'+str(counter)+'.jpg')
+        counter += 1
+    elif counter >= 10 and counter < 100:
+        resized_image = background(frame, 'frames/00'+str(counter)+'.jpg')
+        counter += 1
+    elif counter >= 100 and counter < 139:
+        resized_image = background(frame, 'frames/0'+str(counter)+'.jpg')
+        counter += 1
+    else:
+        resized_image = background(frame, 'frames/0'+str(counter)+'.jpg')
+        counter = 0
+    frame = add_images(frame, resized_image)
 
     #Showing everything
     cv2.imshow('DREAM TIME MACHINE', frame)
