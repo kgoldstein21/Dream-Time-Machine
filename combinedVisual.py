@@ -14,6 +14,8 @@ import youtube_dl
 import pygame
 import sys
 
+import ctypes
+
 cap = cv2.VideoCapture(0)
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_alt.xml')
 kernel = np.ones((21, 21), 'uint8')
@@ -44,18 +46,22 @@ def play_song(file_name):
 
 play_song('cotton_eye_joe')
 song_start_time = time.time()
-tempo = 469
-img_1 = np.zeros([512,512,1],dtype=np.uint8)
-img_1.fill(255)
+tempo = int(469/4)
+#img_1 = np.zeros([512,512,1],dtype=np.uint8)
+#img_1.fill(255)
+wid = 0
+
 
 
 while True:
 
     #Capturing frames from the video feed
     ret, frame = cap.read()
-    song_elapsed_time = time.time()-song_start_time
-    if song_elapsed_time % tempo == 0:
-        cv2.imshow('DREAM TIME MACHINE', img_1)
+    white = background(frame,'white.jpg')
+    song_elapsed_time = 1000*(time.time()-song_start_time)
+    #print("song elapsed time: " + song_elapsed_time)
+    #print("tempo: " + tempo)
+
 
 
 
@@ -64,13 +70,22 @@ while True:
     for (x, y, w, h) in faces:
         elapsed_time = time.time()-start_time
         print(elapsed_time)
-        cv2.circle(frame, (x+2*int(w/4), y+int(h/3)),int(w/20)*int(300**elapsed_time), (255,255,255), thickness=1, lineType=8, shift=0)
+        #cv2.circle(frame, (x+2*int(w/4), y+int(h/3)),int(w/20)*int(300**elapsed_time), (255,255,255), thickness=1, lineType=8, shift=0)
+        if song_elapsed_time%tempo < 50:
+            print('in the loop')
+            print(wid)
+            if wid < 30:
+                wid += 10
+            else:
+                wid = 10
+        cv2.circle(frame, (x+2*int(w/4), y+int(h/3)),int(w/20)*int(wid), (255,255,255), thickness=1, lineType=8, shift=0)
         if more_shapes == True:
             start_time = time.time()
             more_shapes = False
         if elapsed_time > 0.75:
             start_time = time.time()
             more_shapes = True
+
 
     #Adding background image
     if counter >= 0 and counter < 10:
@@ -88,6 +103,13 @@ while True:
     frame = add_images(frame, resized_image)
 
     #Showing everything
+    #print('time is:')
+    #print(song_elapsed_time)
+    #if song_elapsed_time % tempo < 100:
+        #cv2.imshow('DREAM TIME MACHINE', white)
+        #print(song_elapsed_time)
+        #wid+= 100
+    #else:
     cv2.imshow('DREAM TIME MACHINE', frame)
 
     #Stopping everything when key 'q' is hit
