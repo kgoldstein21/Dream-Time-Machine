@@ -37,16 +37,16 @@ def add_images(frame, image_name):
     return frame
 
 def play_song(file_name):
-    song_file = 'cotton_eye_joe.mp3'
+    song_file = 'super.mp3'
     mp_3 = mp3.MP3(song_file)
     mixer.init(frequency=mp_3.info.sample_rate)
     mixer.music.load(song_file)
     mixer.music.play()
 
 
-play_song('cotton_eye_joe')
+play_song('super.mp3')
 song_start_time = time.time()
-tempo = int(469/4)
+tempo = int(99.38)
 #img_1 = np.zeros([512,512,1],dtype=np.uint8)
 #img_1.fill(255)
 wid = 0
