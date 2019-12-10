@@ -22,6 +22,7 @@ kernel = np.ones((21, 21), 'uint8')
 start_time = time.time()
 more_shapes = False
 counter = 0
+dir=True
 
 def background(frame, image_name):
     rows,cols,channels = frame.shape
@@ -46,7 +47,7 @@ def play_song(file_name):
 
 play_song('super.mp3')
 song_start_time = time.time()
-tempo = int(99.38)
+tempo = int(603)
 #img_1 = np.zeros([512,512,1],dtype=np.uint8)
 #img_1.fill(255)
 wid = 0
@@ -74,7 +75,7 @@ while True:
         if song_elapsed_time%tempo < 50:
             print('in the loop')
             print(wid)
-            if wid < 30:
+            if wid < 50:
                 wid += 10
             else:
                 wid = 10
@@ -88,19 +89,36 @@ while True:
 
 
     #Adding background image
-    if counter >= 0 and counter < 10:
-        resized_image = background(frame, 'frames/000'+str(counter)+'.jpg')
-        counter += 1
-    elif counter >= 10 and counter < 100:
-        resized_image = background(frame, 'frames/00'+str(counter)+'.jpg')
-        counter += 1
-    elif counter >= 100 and counter < 139:
-        resized_image = background(frame, 'frames/0'+str(counter)+'.jpg')
-        counter += 1
-    else:
-        resized_image = background(frame, 'frames/0'+str(counter)+'.jpg')
-        counter = 0
+    if dir == True:
+        #print("hello")
+        if counter >= 0 and counter < 10:
+            resized_image = background(frame, 'frames_4epool/000'+str(counter)+'.jpg')
+            counter += 1
+        elif counter >= 10 and counter < 100:
+            resized_image = background(frame, 'frames_4epool/00'+str(counter)+'.jpg')
+            counter += 1
+        elif counter >= 100 and counter < 129:
+            resized_image = background(frame, 'frames_4epool/0'+str(counter)+'.jpg')
+            counter += 1
+        else:
+            resized_image = background(frame, 'frames_4epool/0'+str(counter)+'.jpg')
+            dir = False
+    elif dir == False:
+        if counter <= 129 and counter >= 100:
+            resized_image = background(frame, 'frames_4epool/0'+str(counter)+'.jpg')
+            counter -= 1
+        elif counter < 100 and counter >= 10:
+            resized_image = background(frame, 'frames_4epool/00'+str(counter)+'.jpg')
+            counter -= 1
+        elif counter < 10 and counter > 1:
+            resized_image = background(frame, 'frames_4epool/000'+str(counter)+'.jpg')
+            counter -= 1
+        else:
+            resized_image = background(frame, 'frames_4epool/000'+str(counter)+'.jpg')
+            dir = True
+
     frame = add_images(frame, resized_image)
+
 
     #Showing everything
     #print('time is:')
