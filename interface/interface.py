@@ -1,113 +1,154 @@
 """ Interface for Dream Time Machine """
 import pygame
+import sys
+
 pygame.init()
 
+# initilize display
 size = (1600,1200)
-# size = (800,600)
 win = pygame.display.set_mode(size)
-pygame.display.set_caption("Dream Time Machine Interface")
+pygame.display.set_caption("Dream Time Machine")
 
 
-# class test(pygame.sprite.Sprite):
-#     def __init__(self):
-#         pygame.sprite.Sprite.__init__(self)
-#         self.image = pygame.image.load("sprite_images/Background.png")
-#         self.bigger_img = pygame.transform.scale(self.image, (int(self.size[0]*2), int(self.size[1]*2)))
-#         self.screen.blit(self.bigger_img, [100,100])
-
-class interface:
-    def __init__(self,window,xy):
-        """initilize class and class variables"""
-        self.window = win
-        self.xy = xy
-
-
-
-
-
-
+# sprite image for background
 background = pygame.image.load("sprite_images/Background.jpg")
 bg = pygame.transform.scale(background,(int(size[0]*1.0), int(size[1]*1.0)))
-
 win.blit(bg, (0,0))
 
+#interface title
+title_font = pygame.font.Font('freesansbold.ttf', 96)
+title_text = title_font.render("Dream Time Machine", True, (255,255,255))
+win.blit(title_text, (320, 120))
 
-
-#title
-font = pygame.font.Font('freesansbold.ttf', 96)
-text = font.render("Dream Time Machine", True, (255,255,255))
-# textRect = text.get_rect()
-win.blit(text, (300,160))
-
-# youtube link
-yt_font = pygame.font.Font('freesansbold.ttf', 44)
-yt_text = yt_font.render("Insert Youtube Link For Your Music!", True, (255,255,255))
-win.blit(yt_text, (420,340))
-button_out = pygame.Rect(400,400,800,60)
-pygame.draw.rect(win, (255,255,255), button_out)
-
-#
-# bt_font = pygame.font.Font('freesansbold.ttf', 22)
-# bt_text = bt_font.render("Choose Which Background Mode", True, (255,255,255))
-# win.blit(bt_text, (360, 450))
-
-
-# button nightmare
-nm_font = pygame.font.Font('freesansbold.ttf', 44)
-nm_text = nm_font.render("Nightmare", True, (255,255,255))
-win.blit(nm_text, (250, 590))
-# button_nightmare = pygame.Rect(120,325,120,70)
-# pygame.draw.rect(win, (255,255,255), button_nightmare)
-button_n_gif = pygame.image.load("sprite_images/bats.png")
-b_n_gif = pygame.transform.scale(button_n_gif,(int(size[0]*0.15), int(size[1]*0.15)))
-win.blit(b_n_gif, (240,650))
-
-
-# button happy
-hp_font = pygame.font.Font('freesansbold.ttf', 44)
-hp_text = hp_font.render("Happy", True, (255,255,255))
-win.blit(hp_text, (590, 590))
-# button_happy = pygame.Rect(270,325,120,70)
-# pygame.draw.rect(win, (255,255,255), button_happy)
-button_h_gif = pygame.image.load("sprite_images/friends.png")
-b_h_gif = pygame.transform.scale(button_h_gif,(int(size[0]*0.15), int(size[1]*0.15)))
-win.blit(b_h_gif, (540,650))
-
-
-# button space
-sp_font = pygame.font.Font('freesansbold.ttf', 44)
-sp_text = sp_font.render("Space", True, (255,255,255))
-win.blit(sp_text, (890, 590))
-# button_space = pygame.Rect(420,325,120,70)
-# pygame.draw.rect(win, (255,255,255), button_space)
-button_s_gif = pygame.image.load("sprite_images/ufo.png")
-b_s_gif = pygame.transform.scale(button_s_gif,(int(size[0]*0.15), int(size[1]*0.15)))
-win.blit(b_s_gif, (840,650))
-
-
-# button boring
-br_font = pygame.font.Font('freesansbold.ttf', 44)
-br_text = br_font.render("Corporate", True, (255,255,255))
-win.blit(br_text, (1160, 590))
-# button_boring = pygame.Rect(570,325,120,70)
-# pygame.draw.rect(win, (255,255,255), button_boring)
-button_b_gif = pygame.image.load("sprite_images/businessman.png")
-b_b_gif = pygame.transform.scale(button_b_gif,(int(size[0]*0.15), int(size[1]*0.15)))
-win.blit(b_b_gif, (1150,650))
-
-# start button
-st_font = pygame.font.Font('freesansbold.ttf', 64)
-st_text = st_font.render("Start", True, (255,255,255))
-win.blit(st_text, (730, 900))
-# button_start = pygame.Rect(100,450,100,30)
-# pygame.draw.rect(win, (255,255,255), button_start)
 
 pygame.display.update()
 
 
-running = True
-while running:
-     for event in pygame.event.get():
-         if event.type == pygame.QUIT:
-             runnning = False
-pygame.quit()
+class ButtonMode(pygame.sprite.Sprite):
+
+    def __init__(self, picture_file, button_text, x, y, a, b):
+        """initilization of button class and their attributes"""
+        pygame.sprite.Sprite.__init__(self)
+        self.image = pygame.image.load(picture_file)
+        self.image_resize = pygame.transform.scale(self.image,(int(size[0]*a), int(size[1]*b)))
+        self.font = pygame.font.Font('freesansbold.ttf',44)
+        self.text = self.font.render(button_text, True, (255,255,255))
+        self.rect = self.image_resize.get_rect()
+        self.rect.x = x
+        self.rect.y = y
+
+
+
+
+class ButtonSong(pygame.sprite.Sprite):
+
+    def __init__(self,img_file,song_file):
+        pygame.sprite.Sprite.__init__(self)
+        self.image = pygame.image.load(img_file)
+        self.name = song_file
+
+
+
+
+class ButtonStart(pygame.sprite.Sprite):
+
+    def __init__(self, pos, s_font_size, text):
+        """initilization of buttons and their attributes"""
+        pygame.sprite.Sprite.__init__(self)
+        self.rect = self.image.get_rect(topleft=pos)
+        self.font = pygame.font.Font('freesansbold.ttf',s_font_size)
+        self.text = self.font.render(button_text, True, (255,255,255))
+
+
+def nightmare():
+    """helper function to organize the buttons being called in the run loop """
+    nightmare = ButtonMode("sprite_images/bats.png","Nightmare", 100, 100, 0.15, 0.15)
+    win.blit(nightmare.text, (250, 590))
+    #win.blit(nightmare.image_resize,(240,650))
+    win.blit(nightmare.image, (240,650))
+    pygame.display.flip()
+    return nightmare
+
+def happy():
+    """helper function to organize the buttons being called in the run loop """
+    happy = ButtonMode("sprite_images/friends.png","Happy", 200, 200, 0.15, 0.15)
+    win.blit(happy.text, (590, 590))
+    win.blit(happy.image_resize,(540,650))
+    pygame.display.flip()
+
+def space():
+    """helper function to organize the buttons being called in the run loop """
+    space = ButtonMode("sprite_images/ufo.png","Space", 300, 300, 0.15, 0.15)
+    win.blit(space.text, (890, 590))
+    win.blit(space.image_resize,(840,650))
+    pygame.display.flip()
+
+def corporate():
+    """helper function to organize the buttons being called in the run loop """
+    corporate = ButtonMode("sprite_images/businessman.png","Corporate", 400, 400, 0.15, 0.15)
+    win.blit(corporate.text, (1160, 590))
+    win.blit(corporate.image_resize,(1150,650))
+    pygame.display.flip()
+
+button_1 = pygame.Rect(400,400,100,100)
+
+button_2 = pygame.Rect(600,400,100,100)
+
+button_3 = pygame.Rect(800,400,100,100)
+
+button_4 = pygame.Rect(1000,400,100,100)
+
+
+
+def run_interface():
+    """interface run loop"""
+    running = True
+
+    while running:
+
+        nightmare()
+        happy()
+        space()
+        corporate()
+
+
+        for event in pygame.event.get():
+
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    quit()
+
+                if event.type == pygame.MOUSEBUTTONDOWN:
+                    mouse_pos = event.pos
+
+                    if button_1.collidepoint(mouse_pos):
+                        print ('clicked button 1')
+
+
+                    if button_2.collidepoint(mouse_pos):
+                        print ('clicked button 2')
+
+
+                    if button_3.collidepoint(mouse_pos):
+                        print ('clicked button 3')
+
+
+                    if button_4.collidepoint(mouse_pos):
+                        print ('clicked button 4')
+
+
+        pygame.draw.rect(win, [255,255,255], button_1)
+        pygame.draw.rect(win, [255,255,255], button_2)
+        pygame.draw.rect(win, [255,255,255], button_3)
+        pygame.draw.rect(win, [255,255,255], button_4)
+
+        pygame.display.update()
+
+
+
+    pygame.quit()
+    sys.exit
+
+
+if __name__ == '__main__':
+    run_interface()
