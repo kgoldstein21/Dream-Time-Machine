@@ -19,8 +19,8 @@ import ctypes
 cap = cv2.VideoCapture(0)
 # if not cap.isOpened():
 #     raise Exception('could not open video device')
-# cap.set(cv2.CAP_PROP_FRAME_WIDTH, 800)
-# cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 600)
+#cap.set(cv2.CAP_PROP_FRAME_WIDTH, 3000)
+#cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 3000)
 # ret, frame = cap.read()
 
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_alt.xml')
