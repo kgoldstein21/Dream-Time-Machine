@@ -1,3 +1,8 @@
+'''
+This file is a test of how to get visuals to line up with the music
+'''
+
+
 from __future__ import unicode_literals
 import numpy as np
 import librosa

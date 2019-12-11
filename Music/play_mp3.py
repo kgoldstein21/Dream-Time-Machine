@@ -1,3 +1,7 @@
+'''
+This file is a test of how to play a song using the pygame mixer
+'''
+
 import pygame, mutagen.mp3
 
 song_file = "cotton_eye_joe.mp3"
