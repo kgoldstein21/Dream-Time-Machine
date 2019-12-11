@@ -1,1 +1,62 @@
 
+<!DOCTYPE html>
+<!-- saved from url=(0050)https://kgoldstein21.github.io/Dream-Time-Machine/ -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Dream Time Machine | Dream Time Machine!</title>
+<meta name="generator" content="Jekyll v3.8.5">
+<meta property="og:title" content="Dream Time Machine">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="The title says it all">
+<meta property="og:description" content="The title says it all">
+<link rel="canonical" href="https://kgoldstein21.github.io/Dream-Time-Machine/">
+<meta property="og:url" content="https://kgoldstein21.github.io/Dream-Time-Machine/">
+<meta property="og:site_name" content="Dream Time Machine!">
+<script type="application/ld+json">
+{"@type":"WebSite","url":"https://kgoldstein21.github.io/Dream-Time-Machine/","name":"Dream Time Machine!","headline":"Dream Time Machine","description":"The title says it all","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link rel="stylesheet" href="./index_files/style.css">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Dream Time Machine!</h1>
+      <h2 class="project-tagline">An interactive music visualizer</h2>
+
+      <a href="https://kgoldstein21.github.io/Dream-Time-Machine/about.html" class="btn">About</a>
+      <a href="https://kgoldstein21.github.io/Dream-Time-Machine/ourstory.html" class="btn">Our Story</a>
+      <a href="https://kgoldstein21.github.io/Dream-Time-Machine/instructions.html" class="btn">Instructions</a>
+      <a href="https://kgoldstein21.github.io/Dream-Time-Machine/how.html" class="btn">How it Works</a>
+      <a href="https://kgoldstein21.github.io/Dream-Time-Machine/gallery.html" class="btn">Gallery</a>
+      <a href="https://kgoldstein21.github.io/Dream-Time-Machine/video.html" class="btn">Video</a>
+
+    </section>
+
+    <section class="main-content">
+      <h1 id="dream-time-machine">Dream Time Machine</h1>
+
+
+<h2 id="table-of-contents">Instructions</h2>
+<p>
+  You might be wondering, how did you get this super cool music visualizer to work? We can't divulge all of our secrets here at Dream Time Machine, but let's walk through the basics of our program.
+      </p>
+      
+      
+<p>
+  There are two main files involved in actually running the program, the interface:interface.py and the video: combVis.py. 
+  The interface is what pulls up the menu for you to select the song and mode you want to groove to. 
+  It has buttons that change the settings of the video file when you click on them, and the start button calls the video file.
+  The video file has a bunch of media loaded into it that create the trippy experience. The video file loads in an mp3 from a folder of songs and plays it.
+  As the video plays, it detects any faces in the frames and creates circles that change size with the beat of the song radiating out from your face.
+  It then starts the actual video. The background of the video is made of preloaded images that we ran Google's Deep Dream algorithm on, and the foreground is an outline from the live video feed of your camera.
+  The other files in out github repository make all of the preloaded media. The music files load in all of the songs, and extract data from them to create the beat response in our video. 
+  The deep dream notebook creates all of the deep dreamed images that make up the background of our video. 
+  
+  Put all of it together and you get the whacky experience that is Dream Time Machine!
+
+
+</body></html>
