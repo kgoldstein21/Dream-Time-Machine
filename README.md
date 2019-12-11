@@ -24,12 +24,18 @@ In brief, Google Deep Dream is a computer vision program that deliberately over-
 You will have to install Caffe and Google Protobuf to get Google Deep Dream up and running:
 
   `conda install -c anaconda protobuf`
-
+  
   `conda install -c anaconda caffe`
 
 (For these to work, you might have to install the Caffe and Protobuf files separately for Anaconda to install the Python wrapper for them)
 
 `sudo apt install caffe-cpu`
+
+Once you get Deep Dream up and running, you can play around with various models trained on different image datasets! We used models from [BVLC's Model Zoo](https://github.com/BVLC/caffe/wiki/Model-Zoo) to create our various background visuals distinguishing the different mode options. The specific models we used are as follows:
+- [Places-CNN model from MIT](http://places.csail.mit.edu/)
+- [Model for age and gender classification](https://talhassner.github.io/home/publication/2015_CVPR)
+- [Full ImageNet Model](https://github.com/dmlc/mxnet-model-gallery/blob/master/imagenet-21k-inception.md)
+- [Model for emotion recognition](https://talhassner.github.io/home/publication/2015_ICMI)
 
 ### OpenCV
 This project also makes use of image processing and computer vision library OpenCV. To get this library installed, run the following pip install:
