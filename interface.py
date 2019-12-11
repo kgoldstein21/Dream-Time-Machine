@@ -142,7 +142,7 @@ win.blit(b7_text, (500, 510))
 #
 button_8 = pygame.Rect(650,540,100,50)
 b8_font = pygame.font.Font('freesansbold.ttf', 24)
-b8_text = b8_font.render("Feel it Still", True, (255,255,255))
+b8_text = b8_font.render("Feel It Still", True, (255,255,255))
 win.blit(b8_text, (640, 510))
 #
 button_9 = pygame.Rect(800,540,100,50)
@@ -152,7 +152,7 @@ win.blit(b9_text, (790, 510))
 #
 button_10 = pygame.Rect(950,540,100,50)
 b10_font = pygame.font.Font('freesansbold.ttf', 24)
-b10_text = b10_font.render("Roxxane", True, (255,255,255))
+b10_text = b10_font.render("Roxanne", True, (255,255,255))
 win.blit(b10_text, (950, 510))
 #
 button_11 = pygame.Rect(1100,540,100,50)
@@ -167,7 +167,7 @@ win.blit(b12_text, (800, 360))
 #
 button_13 = pygame.Rect(950,390,100,50)
 b13_font = pygame.font.Font('freesansbold.ttf', 18)
-b13_text = b13_font.render("Thank You, Next", True, (255,255,255))
+b13_text = b13_font.render("thank u, next", True, (255,255,255))
 win.blit(b13_text, (940, 360))
 #
 button_14 = pygame.Rect(1100,390,100,50)

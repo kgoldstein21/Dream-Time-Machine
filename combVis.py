@@ -19,6 +19,10 @@ import ctypes
 
 #initializing video capture and facial recognition variables and setting default mode and song
 cap = cv2.VideoCapture(0)
+cap.set(cv2.CAP_PROP_FRAME_WIDTH, 3000)
+cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 3000)
+ret, frame = cap.read()
+
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_alt.xml')
 kernel = np.ones((21, 21), 'uint8')
 start_time = time.time()
