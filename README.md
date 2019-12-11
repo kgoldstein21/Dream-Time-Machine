@@ -16,7 +16,7 @@ This repository contains code to run an "audio-visual experience" in python in w
 <img src="https://raw.githubusercontent.com/kgoldstein21/Dream-Time-Machine/master/DreamImages/team_dream_5xZoom_3a3x3.jpeg" alt="team dream" width="500"/>
 
 
-In brief, Google Deep Dream is a computer vision program that deliberately over-processes images. It works by taking in a neural network that’s already been trained on a certain set of images, then telling that neural network to recognize patterns in whatever the input image is. It repeats this several times to create truly unsettling images.
+In brief, [Google Deep Dream](https://github.com/google/deepdream/blob/master/dream.ipynb) is a computer vision program that deliberately over-processes images. It works by taking in a neural network that’s already been trained on a certain set of images, then telling that neural network to recognize patterns in whatever the input image is. It repeats this several times to create truly unsettling images.
 
 
 ## Getting Started
@@ -36,6 +36,8 @@ Once you get Deep Dream up and running, you can play around with various models 
 - [Model for age and gender classification](https://talhassner.github.io/home/publication/2015_CVPR)
 - [Full ImageNet Model](https://github.com/dmlc/mxnet-model-gallery/blob/master/imagenet-21k-inception.md)
 - [Model for emotion recognition](https://talhassner.github.io/home/publication/2015_ICMI)
+
+We preprocessed the background videos with DeepDream, so you don't actually need to run DeepDream at all to run the program, but if you are interested in taking a look at how we processed our images with DeepDream, take a look at `deepdreamJupyter.py` in this repo!
 
 ### OpenCV
 This project also makes use of image processing and computer vision library OpenCV. To get this library installed, run the following pip install:
