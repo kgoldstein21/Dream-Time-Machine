@@ -17,11 +17,11 @@ import sys
 import ctypes
 
 cap = cv2.VideoCapture(0)
-if not cap.isOpened():
-    raise Exception('could not open video device')
-cap.set(cv2.CAP_PROP_FRAME_WIDTH, 800)
-cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 600)
-ret, frame = cap.read()
+# if not cap.isOpened():
+#     raise Exception('could not open video device')
+# cap.set(cv2.CAP_PROP_FRAME_WIDTH, 800)
+# cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 600)
+# ret, frame = cap.read()
 
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_alt.xml')
 kernel = np.ones((21, 21), 'uint8')
@@ -142,7 +142,6 @@ def combinedVisual(cap, face_cascade, kernel, start_time, more_shapes, counter, 
         if cv2.waitKey(1) & 0xFF == ord('q'):
             mixer.music.stop()
             break
-
 
     #Close the window
     cap.release()
