@@ -11,7 +11,7 @@
 - [Team](#Team "Team")  
 
 ## Introduction
-This project takes two inputs: a music file and a webcam video feed and outputs an interactive music video. In particular, it detects outlines from the video feed, detects faces, and then creates pulsing shapes that emanate from the center of each face that it detects. the shapes will pulse to the beats per minute of the inputted song. Additionally, the outlines will be superimposed on a video altered with Google's Deep Dream algorithm. If you're not familiar with Deep Dream, here are some examples of images created using it:
+This repository contains code to run an "audio-visual experience" in python in which the user's outline is superimposed on top of a trippy video that we creatd. The video detects you face and pulses shapes out from it to the beat of the song it plays. Songs and modes of the video can be chosen before the video starts. Read on to learn how to start your very own deep dream experience.
 
 <img src="https://i.pinimg.com/originals/20/f6/82/20f6821fc2676529835c5064a3f7300b.jpg" alt="deep dream dog" width="500"/>
 
@@ -35,15 +35,32 @@ This project also makes use of image processing and computer vision library Open
 
 `$ pip install opencv-python`
 
+### Audio Processing
+
+In order to download your own songs and change the audio processing if you wish, there are a few packages you need to download. Run the following commands to download those packages:
+
+`$ pip install Pillow`
+`$ pip install librosa`
+`$ pip install mutagen`
+
+### Interface
+
+To get the interface up and running, install pygame in the command using the following prompt:
+
+`$ pip install pygame`
+
+
 ## Deployment
 
 ## System Architecture
-Our system architecture is roughly laid out in the diagram below:
+
+Our program relies heavily on pre-loaded media. We have many different programs that all work to create this preloaded media. The background video is made of images that are processed using Google's deep dream algorithm in a jupyter notebook. The songs are downloaded from youtube as mp3's and then their data is extracted using librosa. 
+
+The live portion of our program combines all these preloaded parts as well as a couple other compnonents. The experience starts with a launch screen where you choose your settings. Once the actual experience starts, the program plays the song, displays the deep-dreamed images as a video, and uses openCV to overlay an outline of the camera feed, detect faces, and create shapes to the beat of the song. 
 
 ![Image of System Architecture Diagram](https://github.com/kgoldstein21/Dream-Time-Machine/blob/master/systemarch1.jpg "system architecture diagram")
 
-Our program has two parts, one that pre-renders and one that is updated in real-time. The pre-rendered section creates the background video. It downloads Youtube videos and runs the Google Deep Dream algorithm on
-them to make a really trippy background. The real-time part has two parts in it. In the first part, the user chooses a song to play, and the program downloads the song and analyzes it as it plays. In the second part, the program takes in live video of the people using it, detects their face, and creates shapes that come out of their forehead. We're experimenting with ways that the program can be more interactive for the user. 
+ 
 
 ## Feedback
 If you have any questions about this project or would like to contribute in some way, feel free to [email us](mailto:ator@olin.edu "ator@olin.edu")!
