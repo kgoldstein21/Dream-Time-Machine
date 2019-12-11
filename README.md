@@ -49,7 +49,9 @@ This project also makes use of image processing and computer vision library Open
 In order to download your own songs and change the audio processing if you wish, there are a few packages you need to download. Run the following commands to download those packages:
 
 `$ pip install Pillow`
+
 `$ pip install librosa`
+
 `$ pip install mutagen`
 
 ### Interface
