@@ -52,6 +52,8 @@ To get the interface up and running, install pygame in the command using the fol
 
 ## Deployment
 
+To run the program, just download the repository, and open up ##FILENAME-HERE. Then sit back, get up, dance around, do whatever you feel as the program creates an entertaining visual addition to the tunes. 
+
 ## System Architecture
 
 Our program relies heavily on pre-loaded media. We have many different programs that all work to create this preloaded media. The background video is made of images that are processed using Google's deep dream algorithm in a jupyter notebook. The songs are downloaded from youtube as mp3's and then their data is extracted using librosa. 
