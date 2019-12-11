@@ -22,7 +22,9 @@ kernel = np.ones((21, 21), 'uint8')
 start_time = time.time()
 more_shapes = False
 counter = 0
+corpcounter = 0
 dir=True
+mode = 'happy'
 
 def background(frame, image_name):
     rows,cols,channels = frame.shape
@@ -50,8 +52,6 @@ tempo = int(603)
 wid = 0
 threshold = tempo
 
-
-
 while True:
 
     #Capturing frames from the video feed
@@ -60,9 +60,6 @@ while True:
     song_elapsed_time = 1000*(time.time()-song_start_time)
     #print("song elapsed time: " + song_elapsed_time)
     #print("tempo: " + tempo)
-
-
-
 
     #Drawing pulsing circles from each detected face
     faces = face_cascade.detectMultiScale(frame, scaleFactor=1.2, minSize=(20, 20))
@@ -88,33 +85,48 @@ while True:
 
 
     #Adding background image
-    if dir == True:
-        #print("hello")
-        if counter >= 0 and counter < 10:
-            resized_image = background(frame, 'frames_4epool/000'+str(counter)+'.jpg')
-            counter += 1
-        elif counter >= 10 and counter < 100:
-            resized_image = background(frame, 'frames_4epool/00'+str(counter)+'.jpg')
-            counter += 1
-        elif counter >= 100 and counter < 129:
-            resized_image = background(frame, 'frames_4epool/0'+str(counter)+'.jpg')
-            counter += 1
+    if mode == "corporate":
+        if counter >= 0 and counter < 66:
+            if corpcounter < 15:
+                print(mode+'/stock'+str(counter)+'.jpg')
+                resized_image = background(frame, mode+'/stock'+str(counter+1)+'.jpg')
+                corpcounter += 1
+                print(corpcounter)
+            else:
+                print("counter iterating")
+                counter += 1
+                corpcounter = 0
         else:
-            resized_image = background(frame, 'frames_4epool/0'+str(counter)+'.jpg')
-            dir = False
-    elif dir == False:
-        if counter <= 129 and counter >= 100:
-            resized_image = background(frame, 'frames_4epool/0'+str(counter)+'.jpg')
-            counter -= 1
-        elif counter < 100 and counter >= 10:
-            resized_image = background(frame, 'frames_4epool/00'+str(counter)+'.jpg')
-            counter -= 1
-        elif counter < 10 and counter > 1:
-            resized_image = background(frame, 'frames_4epool/000'+str(counter)+'.jpg')
-            counter -= 1
-        else:
-            resized_image = background(frame, 'frames_4epool/000'+str(counter)+'.jpg')
-            dir = True
+            counter = 0
+    else:
+        if dir == True:
+            if counter >= 0 and counter < 10:
+                resized_image = background(frame, mode+'/000'+str(counter)+'.jpg')
+                counter += 1
+            elif counter >= 10 and counter < 100:
+                resized_image = background(frame, mode+'/00'+str(counter)+'.jpg')
+                counter += 1
+            elif counter >= 100 and counter < 129:
+                resized_image = background(frame, mode+'/0'+str(counter)+'.jpg')
+                counter += 1
+            else:
+                resized_image = background(frame, mode+'/0'+str(counter)+'.jpg')
+                dir = False
+        elif dir == False:
+            if counter <= 129 and counter >= 100:
+                resized_image = background(frame, mode+'/0'+str(counter)+'.jpg')
+                counter -= 1
+            elif counter < 100 and counter >= 10:
+                resized_image = background(frame, mode+'/00'+str(counter)+'.jpg')
+                counter -= 1
+            elif counter < 10 and counter > 1:
+                resized_image = background(frame, mode+'/000'+str(counter)+'.jpg')
+                counter -= 1
+            else:
+                resized_image = background(frame, mode+'/000'+str(counter)+'.jpg')
+                dir = True
+
+
 
     frame = add_images(frame, resized_image)
 
