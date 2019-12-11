@@ -11,9 +11,10 @@
 - [Team](#Team "Team")  
 
 ## Introduction
-This repository contains code to run an "audio-visual experience" in python in which the user's outline is superimposed on top of a trippy video that we creatd. The video detects you face and pulses shapes out from it to the beat of the song it plays. Songs and modes of the video can be chosen before the video starts. Read on to learn how to start your very own deep dream experience.
+This repository contains code to run an "audio-visual experience" in python in which the user's outline is superimposed on top of a trippy video that we created. The video detects you face and pulses shapes out from it to the beat of the song it plays. Songs and modes of the video can be chosen before the video starts. Read on to learn how to start your very own deep dream experience.
 
-<img src="https://i.pinimg.com/originals/20/f6/82/20f6821fc2676529835c5064a3f7300b.jpg" alt="deep dream dog" width="500"/>
+<img src="https://raw.githubusercontent.com/kgoldstein21/Dream-Time-Machine/master/DreamImages/team_dream_5xZoom_3a3x3.jpeg" alt="team dream" width="500"/>
+
 
 In brief, Google Deep Dream is a computer vision program that deliberately over-processes images. It works by taking in a neural network that’s already been trained on a certain set of images, then telling that neural network to recognize patterns in whatever the input image is. It repeats this several times to create truly unsettling images.
 
@@ -52,17 +53,17 @@ To get the interface up and running, install pygame in the command using the fol
 
 ## Deployment
 
-To run the program, just download the repository, and open up ##FILENAME-HERE. Then sit back, get up, dance around, do whatever you feel as the program creates an entertaining visual addition to the tunes. 
+To run the program, just download the repository, and open up ##FILENAME-HERE. Then sit back, get up, dance around, do whatever you feel as the program creates an entertaining visual addition to the tunes.
 
 ## System Architecture
 
-Our program relies heavily on pre-loaded media. We have many different programs that all work to create this preloaded media. The background video is made of images that are processed using Google's deep dream algorithm in a jupyter notebook. The songs are downloaded from youtube as mp3's and then their data is extracted using librosa. 
+Our program relies heavily on pre-loaded media. We have many different programs that all work to create this preloaded media. The background video is made of images that are processed using Google's deep dream algorithm in a jupyter notebook. The songs are downloaded from youtube as mp3's and then their data is extracted using librosa.
 
-The live portion of our program combines all these preloaded parts as well as a couple other compnonents. The experience starts with a launch screen where you choose your settings. Once the actual experience starts, the program plays the song, displays the deep-dreamed images as a video, and uses openCV to overlay an outline of the camera feed, detect faces, and create shapes to the beat of the song. 
+The live portion of our program combines all these preloaded parts as well as a couple other compnonents. The experience starts with a launch screen where you choose your settings. Once the actual experience starts, the program plays the song, displays the deep-dreamed images as a video, and uses openCV to overlay an outline of the camera feed, detect faces, and create shapes to the beat of the song.
 
 ![Image of System Architecture Diagram](https://github.com/kgoldstein21/Dream-Time-Machine/blob/master/finalprojectsystemarch.JPG "system architecture diagram")
 
- 
+
 
 ## Feedback
 If you have any questions about this project or would like to contribute in some way, feel free to [email us](mailto:ator@olin.edu "ator@olin.edu")!
