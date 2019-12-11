@@ -1,6 +1,7 @@
 """ Interface for Dream Time Machine """
 import pygame
 import sys
+import combVis
 
 pygame.init()
 
@@ -127,6 +128,7 @@ def run_interface():
 
                     if button_2.collidepoint(mouse_pos):
                         print ('clicked button 2')
+                        combVis.combinedVisual(combVis.cap, combVis.face_cascade, combVis.kernel, combVis.start_time, combVis.more_shapes, combVis.counter, combVis.corpcounter, combVis.dir, "space", "all_star")
 
 
                     if button_3.collidepoint(mouse_pos):
