@@ -72,6 +72,6 @@ Afraz Padamsee [@apadamsee](https://github.com/apadamsee "Afraz's GitHub")
 
 Annie Tor [@ator1](https://github.com/ator1 "Annie's GitHub")   
 
-Christian Quijano
+Christian Quijano [@Cuijor](https://github.com/Cuijor "Christian's Github")
 
 Katie Goldstein [@kgoldstein21](https://github.com/kgoldstein21 "Katie's GitHub")
