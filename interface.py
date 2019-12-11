@@ -9,7 +9,8 @@ pygame.init()
 size = (1600,1200)
 win = pygame.display.set_mode(size)
 pygame.display.set_caption("Dream Time Machine")
-
+songs = "roxanne"
+mode = "happy"
 
 # sprite image for background
 background = pygame.image.load("sprite_images/Background.jpg")
@@ -124,7 +125,7 @@ def run_interface():
 
                     if button_1.collidepoint(mouse_pos):
                         print ('clicked button 1')
-
+                        songs = "all_star"
 
                     if button_2.collidepoint(mouse_pos):
                         print ('clicked button 2')
@@ -138,7 +139,7 @@ def run_interface():
                     if button_4.collidepoint(mouse_pos):
                         print ('clicked button 4')
 
-
+# create start button using combvis line, and setting a variable for each button
         pygame.draw.rect(win, [255,255,255], button_1)
         pygame.draw.rect(win, [255,255,255], button_2)
         pygame.draw.rect(win, [255,255,255], button_3)

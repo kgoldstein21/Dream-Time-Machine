@@ -17,6 +17,12 @@ import sys
 import ctypes
 
 cap = cv2.VideoCapture(0)
+if not cap.isOpened():
+    raise Exception('could not open video device')
+cap.set(cv2.CAP_PROP_FRAME_WIDTH, 800)
+cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 600)
+ret, frame = cap.read()
+
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_alt.xml')
 kernel = np.ones((21, 21), 'uint8')
 start_time = time.time()
@@ -89,7 +95,7 @@ def combinedVisual(cap, face_cascade, kernel, start_time, more_shapes, counter, 
             if counter >= 0 and counter < 66:
                 if corpcounter < 15:
                     print(mode+'/stock'+str(counter)+'.jpg')
-                    resized_image = background(frame, mode+'/stock'+str(counter+1)+'.jpg')
+                    resized_image = background(frame, 'frames_and_modes/'+mode+'/stock'+str(counter+1)+'.jpg')
                     corpcounter += 1
                     print(corpcounter)
                 else:
@@ -101,29 +107,29 @@ def combinedVisual(cap, face_cascade, kernel, start_time, more_shapes, counter, 
         else:
             if dir == True:
                 if counter >= 0 and counter < 10:
-                    resized_image = background(frame, mode+'/000'+str(counter)+'.jpg')
+                    resized_image = background(frame, 'frames_and_modes/'+mode+'/000'+str(counter)+'.jpg')
                     counter += 1
                 elif counter >= 10 and counter < 100:
-                    resized_image = background(frame, mode+'/00'+str(counter)+'.jpg')
+                    resized_image = background(frame, 'frames_and_modes/'+mode+'/00'+str(counter)+'.jpg')
                     counter += 1
                 elif counter >= 100 and counter < 129:
-                    resized_image = background(frame, mode+'/0'+str(counter)+'.jpg')
+                    resized_image = background(frame, 'frames_and_modes/'+mode+'/0'+str(counter)+'.jpg')
                     counter += 1
                 else:
-                    resized_image = background(frame, mode+'/0'+str(counter)+'.jpg')
+                    resized_image = background(frame, 'frames_and_modes/'+mode+'/0'+str(counter)+'.jpg')
                     dir = False
             elif dir == False:
                 if counter <= 129 and counter >= 100:
-                    resized_image = background(frame, mode+'/0'+str(counter)+'.jpg')
+                    resized_image = background(frame, 'frames_and_modes/'+mode+'/0'+str(counter)+'.jpg')
                     counter -= 1
                 elif counter < 100 and counter >= 10:
-                    resized_image = background(frame, mode+'/00'+str(counter)+'.jpg')
+                    resized_image = background(frame, 'frames_and_modes/'+mode+'/00'+str(counter)+'.jpg')
                     counter -= 1
                 elif counter < 10 and counter > 1:
-                    resized_image = background(frame, mode+'/000'+str(counter)+'.jpg')
+                    resized_image = background(frame, 'frames_and_modes/'+mode+'/000'+str(counter)+'.jpg')
                     counter -= 1
                 else:
-                    resized_image = background(frame, mode+'/000'+str(counter)+'.jpg')
+                    resized_image = background(frame, 'frames_and_modes/'+mode+'/000'+str(counter)+'.jpg')
                     dir = True
 
 
