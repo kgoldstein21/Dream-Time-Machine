@@ -60,7 +60,7 @@ Our program relies heavily on pre-loaded media. We have many different programs 
 
 The live portion of our program combines all these preloaded parts as well as a couple other compnonents. The experience starts with a launch screen where you choose your settings. Once the actual experience starts, the program plays the song, displays the deep-dreamed images as a video, and uses openCV to overlay an outline of the camera feed, detect faces, and create shapes to the beat of the song. 
 
-![Image of System Architecture Diagram](https://github.com/kgoldstein21/Dream-Time-Machine/blob/master/systemarch1.jpg "system architecture diagram")
+![Image of System Architecture Diagram](https://github.com/kgoldstein21/Dream-Time-Machine/blob/master/finalprojectsystemarch.JPG "system architecture diagram")
 
  
 
