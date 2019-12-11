@@ -61,6 +61,9 @@ def add_images(frame, image_name):
     return frame
 
 def play_song(file_name):
+    '''
+    Takes in an mp3 file name and uses pygame mixer to play the song
+    '''
     mp_3 = mp3.MP3(file_name)
     mixer.init(frequency=mp_3.info.sample_rate)
     mixer.music.load(file_name)
@@ -76,6 +79,8 @@ def combinedVisual(cap, face_cascade, kernel, start_time, more_shapes, counter, 
     background from the frames_and_modes folder based on the chosen mode, shows everything in a
     window, and then closes everything when you hit the 'q' key.
     '''
+
+    #play song and keep track of when it started
     play_song('playlist/'+song+'.mp3')
     song_start_time = time.time()
     tempo = int(603)
@@ -93,11 +98,16 @@ def combinedVisual(cap, face_cascade, kernel, start_time, more_shapes, counter, 
         for (x, y, w, h) in faces:
             elapsed_time = time.time()-start_time
             if song_elapsed_time > threshold:
+                #this event happens everytime a beat happens
+
+                #changes the threshold to the time of the next beat
                 threshold += tempo
                 if wid < 50:
+                    #makes the circle bigger at the time of the beat
                     wid += 10
                 else:
                     wid = 10
+                    
             cv2.circle(frame, (x+2*int(w/4), y+int(h/3)),int(w/20)*int(wid), (255,255,255), thickness=1, lineType=8, shift=0)
             if more_shapes == True:
                 start_time = time.time()
