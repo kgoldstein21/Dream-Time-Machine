@@ -34,8 +34,9 @@ You will have to install Caffe and Google Protobuf to get Google Deep Dream up a
 Once you get Deep Dream up and running, you can play around with various models trained on different image datasets! We used models from [BVLC's Model Zoo](https://github.com/BVLC/caffe/wiki/Model-Zoo) to create our various background visuals distinguishing the different mode options. The specific models we used are as follows:
 - [Places-CNN model from MIT](http://places.csail.mit.edu/)
 - [Model for age and gender classification](https://talhassner.github.io/home/publication/2015_CVPR)
-- [Full ImageNet Model](https://github.com/dmlc/mxnet-model-gallery/blob/master/imagenet-21k-inception.md)
+- [Full ImageNet model](https://github.com/dmlc/mxnet-model-gallery/blob/master/imagenet-21k-inception.md)
 - [Model for emotion recognition](https://talhassner.github.io/home/publication/2015_ICMI)
+- [Pose-Aware Model for facial recognition in the wild](https://gist.github.com/iacopomasi/0c52aaa4ef778ad81b7b6f4ab860a237)
 
 We preprocessed the background videos with DeepDream, so you don't actually need to run DeepDream at all to run the program, but if you are interested in taking a look at how we processed our images with DeepDream, take a look at `deepdreamJupyter.py` in this repo!
 
@@ -49,7 +50,9 @@ This project also makes use of image processing and computer vision library Open
 In order to download your own songs and change the audio processing if you wish, there are a few packages you need to download. Run the following commands to download those packages:
 
 `$ pip install Pillow`
+
 `$ pip install librosa`
+
 `$ pip install mutagen`
 
 ### Interface
