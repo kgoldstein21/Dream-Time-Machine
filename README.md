@@ -11,9 +11,10 @@
 - [Team](#Team "Team")  
 
 ## Introduction
-This project takes two inputs: a music file and a webcam video feed and outputs an interactive music video. In particular, it detects outlines from the video feed, detects faces, and then creates pulsing shapes that emanate from the center of each face that it detects. the shapes will pulse to the beats per minute of the inputted song. Additionally, the outlines will be superimposed on a video altered with Google's Deep Dream algorithm. If you're not familiar with Deep Dream, here are some examples of images created using it:
+This repository contains code to run an "audio-visual experience" in python in which the user's outline is superimposed on top of a trippy video that we created. The video detects you face and pulses shapes out from it to the beat of the song it plays. Songs and modes of the video can be chosen before the video starts. Read on to learn how to start your very own deep dream experience.
 
-<img src="https://i.pinimg.com/originals/20/f6/82/20f6821fc2676529835c5064a3f7300b.jpg" alt="deep dream dog" width="500"/>
+<img src="https://raw.githubusercontent.com/kgoldstein21/Dream-Time-Machine/master/DreamImages/team_dream_5xZoom_3a3x3.jpeg" alt="team dream" width="500"/>
+
 
 In brief, Google Deep Dream is a computer vision program that deliberately over-processes images. It works by taking in a neural network that’s already been trained on a certain set of images, then telling that neural network to recognize patterns in whatever the input image is. It repeats this several times to create truly unsettling images.
 
@@ -23,27 +24,52 @@ In brief, Google Deep Dream is a computer vision program that deliberately over-
 You will have to install Caffe and Google Protobuf to get Google Deep Dream up and running:
 
   `conda install -c anaconda protobuf`
-
+  
   `conda install -c anaconda caffe`
 
 (For these to work, you might have to install the Caffe and Protobuf files separately for Anaconda to install the Python wrapper for them)
 
 `sudo apt install caffe-cpu`
 
+Once you get Deep Dream up and running, you can play around with various models trained on different image datasets! We used models from [BVLC's Model Zoo](https://github.com/BVLC/caffe/wiki/Model-Zoo) to create our various background visuals distinguishing the different mode options. The specific models we used are as follows:
+- [Places-CNN model from MIT](http://places.csail.mit.edu/)
+- [Model for age and gender classification](https://talhassner.github.io/home/publication/2015_CVPR)
+- [Full ImageNet Model](https://github.com/dmlc/mxnet-model-gallery/blob/master/imagenet-21k-inception.md)
+- [Model for emotion recognition](https://talhassner.github.io/home/publication/2015_ICMI)
+
 ### OpenCV
 This project also makes use of image processing and computer vision library OpenCV. To get this library installed, run the following pip install:
 
 `$ pip install opencv-python`
 
+### Audio Processing
+
+In order to download your own songs and change the audio processing if you wish, there are a few packages you need to download. Run the following commands to download those packages:
+
+`$ pip install Pillow`
+`$ pip install librosa`
+`$ pip install mutagen`
+
+### Interface
+
+To get the interface up and running, install pygame in the command using the following prompt:
+
+`$ pip install pygame`
+
+
 ## Deployment
 
+To run the program, just download the repository, and open up ##FILENAME-HERE. Then sit back, get up, dance around, do whatever you feel as the program creates an entertaining visual addition to the tunes.
+
 ## System Architecture
-Our system architecture is roughly laid out in the diagram below:
 
-![Image of System Architecture Diagram](https://github.com/kgoldstein21/Dream-Time-Machine/blob/master/systemarch1.jpg "system architecture diagram")
+Our program relies heavily on pre-loaded media. We have many different programs that all work to create this preloaded media. The background video is made of images that are processed using Google's deep dream algorithm in a jupyter notebook. The songs are downloaded from youtube as mp3's and then their data is extracted using librosa.
 
-Our program has two parts, one that pre-renders and one that is updated in real-time. The pre-rendered section creates the background video. It downloads Youtube videos and runs the Google Deep Dream algorithm on
-them to make a really trippy background. The real-time part has two parts in it. In the first part, the user chooses a song to play, and the program downloads the song and analyzes it as it plays. In the second part, the program takes in live video of the people using it, detects their face, and creates shapes that come out of their forehead. We're experimenting with ways that the program can be more interactive for the user. 
+The live portion of our program combines all these preloaded parts as well as a couple other compnonents. The experience starts with a launch screen where you choose your settings. Once the actual experience starts, the program plays the song, displays the deep-dreamed images as a video, and uses openCV to overlay an outline of the camera feed, detect faces, and create shapes to the beat of the song.
+
+![Image of System Architecture Diagram](https://github.com/kgoldstein21/Dream-Time-Machine/blob/master/finalprojectsystemarch.JPG "system architecture diagram")
+
+
 
 ## Feedback
 If you have any questions about this project or would like to contribute in some way, feel free to [email us](mailto:ator@olin.edu "ator@olin.edu")!
@@ -53,6 +79,6 @@ Afraz Padamsee [@apadamsee](https://github.com/apadamsee "Afraz's GitHub")
 
 Annie Tor [@ator1](https://github.com/ator1 "Annie's GitHub")   
 
-Christian Quijano
+Christian Quijano [@Cuijor](https://github.com/Cuijor "Christian's Github")
 
 Katie Goldstein [@kgoldstein21](https://github.com/kgoldstein21 "Katie's GitHub")
