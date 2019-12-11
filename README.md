@@ -61,7 +61,7 @@ To get the interface up and running, install pygame in the command using the fol
 
 ## Deployment
 
-To run the program, just download the repository, and open up ##FILENAME-HERE. Then sit back, get up, dance around, do whatever you feel as the program creates an entertaining visual addition to the tunes.
+To run the program, just download the repository, and open up `interface.py`. Then sit back, get up, dance around, do whatever you feel as the program creates an entertaining visual addition to the tunes.
 
 ## System Architecture
 
