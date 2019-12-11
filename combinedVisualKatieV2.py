@@ -46,7 +46,7 @@ def play_song(file_name):
     mixer.music.play()
 
 
-play_song('super.mp3')
+play_song('playlist/super.mp3')
 song_start_time = time.time()
 tempo = int(603)
 wid = 0
@@ -56,7 +56,6 @@ while True:
 
     #Capturing frames from the video feed
     ret, frame = cap.read()
-    white = background(frame,'white.jpg')
     song_elapsed_time = 1000*(time.time()-song_start_time)
     #print("song elapsed time: " + song_elapsed_time)
     #print("tempo: " + tempo)
