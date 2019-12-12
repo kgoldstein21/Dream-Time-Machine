@@ -19,6 +19,8 @@ import ctypes
 
 #initializing video capture and facial recognition variables and setting default mode and song
 cap = cv2.VideoCapture(0)
+
+""" unhash the 3 lines below if you want to change the videocapture width and height"""
 # cap.set(cv2.CAP_PROP_FRAME_WIDTH, 3000)
 # cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 3000)
 # ret, frame = cap.read()
