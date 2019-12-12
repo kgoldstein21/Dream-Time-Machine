@@ -19,9 +19,9 @@ import ctypes
 
 #initializing video capture and facial recognition variables and setting default mode and song
 cap = cv2.VideoCapture(0)
-cap.set(cv2.CAP_PROP_FRAME_WIDTH, 3000)
-cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 3000)
-ret, frame = cap.read()
+# cap.set(cv2.CAP_PROP_FRAME_WIDTH, 3000)
+# cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 3000)
+# ret, frame = cap.read()
 
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_alt.xml')
 kernel = np.ones((21, 21), 'uint8')
@@ -107,7 +107,7 @@ def combinedVisual(cap, face_cascade, kernel, start_time, more_shapes, counter, 
                     wid += 10
                 else:
                     wid = 10
-                    
+
             cv2.circle(frame, (x+2*int(w/4), y+int(h/3)),int(w/20)*int(wid), (255,255,255), thickness=1, lineType=8, shift=0)
             if more_shapes == True:
                 start_time = time.time()
